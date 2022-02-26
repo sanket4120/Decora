@@ -1,0 +1,102 @@
+:root {
+  --primary: #f36565;
+  --font: #334756;
+}
+
+body {
+  color: var(--font);
+}
+
+/* Navbar */
+
+.navbar-item a:hover {
+  color: var(--primary);
+}
+
+.navbar-item.icon {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.active {
+  color: var(--primary);
+  border-bottom: 2px var(--primary) solid;
+}
+
+.navbar-item.icon .badge {
+  font-size: 0.5em;
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  background-color: var(--primary);
+  color: var(--white);
+}
+/* X Navbar X */
+
+/* Product Carousel */
+
+.product-carousel {
+  background-color: var(--light-blue);
+  height: calc(40vh - 4rem);
+}
+
+.carousel-banner,
+.carousel-banner-image,
+.carousel-banner-desc {
+  height: inherit;
+}
+
+.carousel-banner-desc {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.carousel-banner-image img {
+  object-position: right;
+}
+
+.carousel-banner-desc-title {
+  font-size: calc(30vw * 0.16);
+}
+
+@media only screen and (min-width: 768px) {
+  .product-carousel {
+    height: calc(70vh - 4rem);
+  }
+}
+
+/* X Product Carousel X */
+
+/* Category Carousel */
+
+.category-carousel {
+  height: 30vh;
+}
+
+.category-carousel-banner {
+  height: inherit;
+  background-color: var(--light-blue);
+  border-radius: var(--rounded);
+}
+
+/* X Category Carousel X */
+
+/* Featured products */
+
+.card {
+  box-shadow: none;
+}
+
+/* X Featured products X */
+
+/* Footer */
+
+footer p {
+  letter-spacing: 1rem;
+}
+
+/* X Footer X */
