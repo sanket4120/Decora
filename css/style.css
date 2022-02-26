@@ -31,7 +31,16 @@ body {
   background-color: var(--primary);
   color: var(--white);
 }
+
 /* X Navbar X */
+
+/* Searchbar */
+
+.searchbar {
+  max-width: 30rem;
+}
+
+/* X Searchbar X */
 
 /* Product Carousel */
 
