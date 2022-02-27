@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://modulo.netlify.app/css/main.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+    <title>Decora | Shop</title>
+  </head>
+  <body class="scrollbar">
+    <header>
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+            <h3><a href="./index.html">Decora</a></h3>
+          </div>
+        </div>
+        <ul class="navbar-menu" id="menu">
+          <li class="navbar-item txt-center active">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="navbar-item txt-center">
+            <a href="#">Categories</a>
+          </li>
+          <li class="navbar-item txt-center">
+            <a href="./shop.html">Shop</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="navbar-item icon">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <span class="badge">4</span>
+          </li>
+          <li class="navbar-item icon">
+            <a href="#">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <span class="badge">4</span>
+          </li>
+          <li
+            class="navbar-item icon navbar-toggler"
+            id="navbar-toggler"
+            data-toggle="#menu"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="searchbar mx-auto my-3 container">
+      <form>
+        <div class="input-has-icon">
+          <i class="fa-solid fa-magnifying-glass ml-2"></i>
+          <input type="text" class="input" placeholder="Search" />
+        </div>
+      </form>
+    </section>
+
+    <section class="container my-6 flex flex-column">
+      <button
+        class="btn mb-3 ml-auto filter-toggler"
+        id="navbar-toggler"
+        data-toggle="#filters"
+      >
+        Filter Results
+      </button>
+      <div class="grid gap-1">
+        <aside class="filters col-12 col-md-3 scrollbar" id="filters">
+          <button class="mb-5 btn btn-light">Clear All</button>
+
+          <div class="mb-5">
+            <h4 class="fw-medium mb-3">Categories</h4>
+            <ul class="list-unstyled">
+              <li class="txt-primary list-item">Furniture</li>
+              <li class="list-item">Lighting</li>
+              <li class="list-item">Decor</li>
+              <li class="list-item">Textiles</li>
+              <li class="list-item">Exterior</li>
+            </ul>
+          </div>
+
+          <div class="mb-5">
+            <h4 class="fw-medium mb-3">Sort BY</h4>
+            <ul class="list-unstyled">
+              <li class="list-item">
+                <input type="radio" name="sort" />
+                <label class="label">Price(low to high)</label>
+              </li>
+              <li class="list-item">
+                <input type="radio" name="sort" />
+                <label class="label">Price(high to low)</label>
+              </li>
+              <li class="list-item">
+                <input type="radio" name="sort" />
+                <label class="label">Newset First</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-5">
+            <h4 class="fw-medium mb-3">Rating</h4>
+            <ul class="list-unstyled">
+              <li class="list-item">
+                <input type="checkbox" />
+                <label class="label ml-2">
+                  4 <i class="fa-solid fa-star"></i> & above
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" />
+                <label class="label ml-2">
+                  3 <i class="fa-solid fa-star"></i> & above
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" />
+                <label class="label ml-2">
+                  2 <i class="fa-solid fa-star"></i> & above
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" />
+                <label class="label ml-2">
+                  1 <i class="fa-solid fa-star"></i> & above
+                </label>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <main class="products col-12 col-md-9">
+          <div class="grid gap-2">
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <img src="../assets/chair.png" alt="chair" class="card-image" />
+              <div class="card-body txt-center">
+                <p>Retrostar Velvet Chair</p>
+                <p>
+                  <span class="txt-deleted txt-secondary">Rs 3000</span>
+                  <span class="txt-primary">Rs 2000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="../assets/furniture.png"
+                alt="chair"
+                class="card-image"
+              />
+              <div class="card-body txt-center">
+                <p>Wall Desk</p>
+                <p>
+                  <span>Rs 3000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="../assets/textile.png" alt="chair" class="card-image" />
+              <div class="card-body txt-center">
+                <p>Tropical Pillow</p>
+                <p>
+                  <span class="txt-deleted txt-secondary">Rs 3000</span>
+                  <span class="txt-primary">Rs 2000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="../assets/lighting.png"
+                alt="chair"
+                class="card-image"
+              />
+              <div class="card-body txt-center">
+                <p>Pendant Lamp</p>
+                <p>
+                  <span class="txt-deleted txt-secondary">Rs 3000</span>
+                  <span class="txt-primary">Rs 2000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="../assets/chair.png" alt="chair" class="card-image" />
+              <div class="card-body txt-center">
+                <p>Retrostar Velvet Chair</p>
+                <p>
+                  <span class="txt-deleted txt-secondary">Rs 3000</span>
+                  <span class="txt-primary">Rs 2000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="../assets/furniture.png"
+                alt="chair"
+                class="card-image"
+              />
+              <div class="card-body txt-center">
+                <p>Wall Desk</p>
+                <p>
+                  <span>Rs 3000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img src="../assets/textile.png" alt="chair" class="card-image" />
+              <div class="card-body txt-center">
+                <p>Tropical Pillow</p>
+                <p>
+                  <span class="txt-deleted txt-secondary">Rs 3000</span>
+                  <span class="txt-primary">Rs 2000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="card col-6 col-sm-6 col-lg-4">
+              <button class="btn btn-white icon-rounded card-badge-top-end">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="../assets/lighting.png"
+                alt="chair"
+                class="card-image"
+              />
+              <div class="card-body txt-center">
+                <p>Pendant Lamp</p>
+                <p>
+                  <span class="txt-deleted txt-secondary">Rs 3000</span>
+                  <span class="txt-primary">Rs 2000</span>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary w-100">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <footer class="bg-primary py-6">
+      <p class="size-1 txt-white fw-bold txt-center">DECORA</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://modulo.netlify.app/js/main.js"></script>
+  </body>
+</html>
