@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://modulo.netlify.app/css/main.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <title>Decora | Wishlist</title>
+  </head>
+  <body class="scrollbar">
+    <header>
+      <nav class="navbar container">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+            <h3><a href="../index.html">Decora</a></h3>
+          </div>
+        </div>
+        <ul class="navbar-menu" id="menu">
+          <li class="navbar-item txt-center">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="navbar-item txt-center">
+            <a href="#">Categories</a>
+          </li>
+          <li class="navbar-item txt-center">
+            <a href="./shop.html">Shop</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="navbar-item icon active">
+            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li class="navbar-item icon">
+            <a href="./wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <span class="badge">4</span>
+          </li>
+          <li class="navbar-item icon">
+            <a href="./cart.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <span class="badge">4</span>
+          </li>
+          <li
+            class="navbar-item icon navbar-toggler"
+            id="navbar-toggler"
+            data-toggle="#menu"
+          >
+            <i class="fa-solid fa-bars icon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="minheight container flex align-items-center">
+      <div class="auth-container mx-auto w-100 my-6">
+        <div class="flex justify-content-evenly mb-6">
+          <h2 class="fw-normal txt-secondary">
+            <a href="./signup.html"> Register </a>
+          </h2>
+          <h2 class="fw-normal txt-primary">
+            <a href="./login.html"> Login </a>
+          </h2>
+        </div>
+        <form>
+          <div class="mb-3">
+            <label for="username" class="label">Email</label>
+            <input type="email" class="input" id="username" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="label">Password</label>
+            <input type="password" class="input" id="password" />
+          </div>
+          <div class="flex justify-content-between mb-3">
+            <span>
+              <input type="checkbox" id="remember" />
+              <label for="remember" class="label ml-1 fw-normal"
+                >Remember me</label
+              >
+            </span>
+
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-primary py-6">
+      <p class="size-1 txt-white fw-bold txt-center">DECORA</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://modulo.netlify.app/js/main.js"></script>
+  </body>
+</html>
